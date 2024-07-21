@@ -44,7 +44,7 @@ void closeGrip() {
   delay(1000);
   Serial.print("Mekanik grip\n");
   delay(100);
-  robot.setJointSpeed(servoID, 1023);  // Kembalikan ke kecepatan default
+  robot.setJointSpeed(servoID, 1023);
 }
 
 void openSer1(){
@@ -109,5 +109,7 @@ void loop() {
     } else {
       Serial.println("Masukkan Inputan Yang Benar");
     }
+  }else{
+    Serial.println("Serial Not Detected");
   }
 }
