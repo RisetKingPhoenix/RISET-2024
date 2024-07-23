@@ -1,8 +1,9 @@
-XL320 robot;
-
 #include <SoftwareSerial.h>
 #include <Servo.h>
 #include "XL320.h"
+
+XL320 robot;
+
 SoftwareSerial mySerial(9, 8);
 int servoID = 1;
 
